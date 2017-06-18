@@ -1,4 +1,6 @@
 
+<h1>Chat and Slider with settings</h1>
+
 <b>1. Install</b>
 
  - clone the repo
@@ -9,8 +11,8 @@
 
   Browser should open. If you would like to try out the chat open the page in an other tab as well.
 
-2. Build for prod
-  to serve one minified JS and CSS file
+<b>2. Build for prod</b>
+  Serving only one minified JS and CSS file
   npm build => public/static
 
 <b>What it is and how to use?</b>
@@ -18,16 +20,16 @@
 Please Note:  I assume in the following description you've already opened the application in two
 different browser tab at the same time.
 
-General information
+<b>General information</b>
 
   In frontend development I used ReactJs. I used - create-react-app as Facebook -
   with a little config change to serve sass files as well.
   For generating CSS I used compass and React-Router for routing.
   No other additional plugins were used.
 
-  In backend development(MockServer) -see later - I used express on NodeJs.
+  In backend development(MockServer) - see later - I used express on NodeJs.
 
-1.  Chat
+<b>1.  Chat</b>
   Chat is the index route users arrives here.
   User can send messages to others.
 
@@ -47,7 +49,7 @@ General information
   Click on save. Go back to chat tab send a message. In the other browser tab
    you can see the sent message with the new nickname.
 
-2. Photos
+<b>2. Photos</b>
   In photos tab you can see a carousel.
 
   Features/behaviour:
@@ -64,15 +66,31 @@ General information
     in Chrome: devTools -> more tools -> Sensors tab -> Find 'touch'  field at the bottom -> set to Force enabled
     Make swipe gestures with your mouse over the carousel image.
 
-3. Settings
+<b>3. Settings</b>
     Features/behaviour:
      1. Two accordions here: ChatSettings and PhotoSettings
      If you click on accordion title the detail part of accordion will open and close.
      2. Change different Settings: You can set your nickname for the chat and the resolution of your photos here. As you already seen in the previous tabs.
 
-Some Other thing:
+<b>Some Other thing:</b>
 
-  Style:
+ <b>App strucure:</b>
+
+     FE:
+     application
+       index.js is the root element were react initalize;
+       App.js the central place of the application. Responsible
+       for routing and maintaing application state
+       contianers and components for React components
+       styles for every style related file (sass, css, fonts currently)
+
+     BE:
+      server.js  for handling http request and socket connection
+      static folder: for serving images to the FE
+      webpack config use this server port as a proxy server (package.json)
+
+
+  <b>Style:</b>
     The page is fully responsive. Every component and container component has own sass file as react principles said.
     It is a bit different approach from sass and compass. But I tried to handle them together.
     Considerable approach was to add only screen.css to the react root and import all of needed css in that file. But the followed structure seems to be more handy with during development.
@@ -85,23 +103,17 @@ Some Other thing:
       Shared mixins location: mixins.scss and mixins.css
 
       Style Developing process:
-        1. You need to edit only the sass files then compile to css automatically with:
-        compass compile  Check for changes: compass watch
+        -You need to edit only the sass files then compile to css automatically with:
+         $ compass compile  Check for changes: $ compass watch
 
-        2. You can import sass files directly into react components.
+        -You can import sass files directly into react components.
         in this case:
-          1. npm eject
-          2. replace webpack.config.dev.js in config folder to
+          -npm eject
+          -replace webpack.config.dev.js in config folder to
           webpack.config.dev.js located in the root directory.
           It adds sass loader to webpack.
-      )
 
-
-
-
-
-
-Important notes:
+<b>Important notes:</b>
   - Socket.io: I tried to reach your server. It said: 'Welcome to sicket.io' but
   I had no socket connection with it. I tried with different Socket.io testers and my own application as well. I tried with Socket.o version 0.9 and with latest too.
   Handling this issue I mocked out the socket server (just for simplification the latest) in server.js.
@@ -125,27 +137,7 @@ Important notes:
    Please note: it is just to demonstrate a client img loading and chaching for one image.
 
 
-1. Description:
-
-      To develop style:
-      (assume you already have compass)
-      $ compass watch in style folder
-
-    FE:
-    application
-      index.js is the root element were react initalize;
-      App.js the central place of the application. Responsible
-      for routing and maintaing application state
-      contianers and components for React components
-      styles for every style related file (sass, css, fonts currently)
-
-    BE:
-     server.js  for handling http request and socket connection
-     static folder: for serving images to the FE
-     webpack config use this server port as a proxy server (package.json)
-
-
-      Development plan of the application:
+<b>Development plan of the application:</b>
 
       - Unit tests!
       - make more mixins in sass file, where possible

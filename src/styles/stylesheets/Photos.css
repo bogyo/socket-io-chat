@@ -1,0 +1,82 @@
+/* line 29, ../sass/base.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 1.2em;
+}
+/* line 6, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #31E9BA;
+}
+/* line 27, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #30DCA3;
+}
+/* line 37, ../sass/base.scss */
+a:hover {
+  border: 1px solid #30DCA3;
+}
+
+/* line 3, ../sass/Photos.scss */
+.Photos {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: -70px auto 0;
+  position: relative;
+  padding-top: 70px;
+}
+
+/* line 12, ../sass/Photos.scss */
+.slideShow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 21, ../sass/Photos.scss */
+.prev-arrow {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 35px solid #31E9BA;
+  vertical-align: top;
+  margin: -70px 15px 0 0;
+  cursor: pointer;
+  left: 10px;
+  top: 50%;
+}
+
+/* line 36, ../sass/Photos.scss */
+.next-arrow {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 35px solid #31E9BA;
+  vertical-align: top;
+  margin: -70px 0 0 15px;
+  cursor: pointer;
+  top: 50%;
+  right: 10px;
+}

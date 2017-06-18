@@ -1,0 +1,92 @@
+/* line 29, ../sass/base.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 1.2em;
+}
+/* line 6, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #31E9BA;
+}
+/* line 27, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #30DCA3;
+}
+/* line 37, ../sass/base.scss */
+a:hover {
+  border: 1px solid #30DCA3;
+}
+
+/* line 5, ../sass/messagelist.scss */
+.MessageList {
+  text-align: left;
+}
+
+/* line 9, ../sass/messagelist.scss */
+.messageWrapperOwn {
+  margin: 5px;
+  text-align: right;
+}
+
+/* line 13, ../sass/messagelist.scss */
+.messageWrapperIncoming {
+  margin: 5px;
+  text-align: left;
+}
+
+/* line 17, ../sass/messagelist.scss */
+.ownMessage {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  max-width: 100%;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  -moz-border-radius: 20px 20px 0 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px 20px 0 20px;
+  background-color: #25335A;
+}
+
+/* line 21, ../sass/messagelist.scss */
+.incomingMessage {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  max-width: 100%;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  -moz-border-radius: 0 20px 20px 20px;
+  -webkit-border-radius: 0;
+  border-radius: 0 20px 20px 20px;
+  background-color: #436DE3;
+}
+
+/* line 25, ../sass/messagelist.scss */
+.nickName {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: .8em;
+}

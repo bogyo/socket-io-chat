@@ -1,0 +1,53 @@
+/* line 29, ../sass/base.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 1.2em;
+}
+/* line 6, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #31E9BA;
+}
+/* line 27, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #30DCA3;
+}
+/* line 37, ../sass/base.scss */
+a:hover {
+  border: 1px solid #30DCA3;
+}
+
+/* line 3, ../sass/chatSettings.scss */
+.ChatSettings {
+  margin: 20px 0;
+  text-align: left;
+}
+/* line 7, ../sass/chatSettings.scss */
+.ChatSettings .formwrapper {
+  margin: 20px 0;
+}
+/* line 10, ../sass/chatSettings.scss */
+.ChatSettings .txtinput {
+  font-size: 1.2em;
+  background-color: #241647;
+}
+/* line 15, ../sass/chatSettings.scss */
+.ChatSettings .nickname {
+  color: #31E9BA;
+  font-weight: bold;
+}

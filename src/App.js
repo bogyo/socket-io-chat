@@ -52,7 +52,6 @@ class App extends Component {
 
          this.setState({ messages: messages, unread: true }, () => {
            this.unread = true;
-           console.log(this.unread, window.location);
          });
         };
       }.bind(this));

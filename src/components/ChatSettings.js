@@ -75,5 +75,6 @@ export default class ChatSettings extends PureComponent {
 
 
 ChatSettings.propTypes = {
-  chatSettings: PropTypes.string.isRequired
+  chatSettings: PropTypes.string.isRequired,
+  onSettingsChange: PropTypes.func.isRequired
 };

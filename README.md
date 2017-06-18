@@ -1,11 +1,11 @@
 
-1. Install
+<b>1. Install</b>
 
-  1. clone the repo
-  2. open a terminal in the created directory root
-  2. $ npm install
-  3. $ node server.js
-  4. $ npm start
+ - clone the repo
+ - open a terminal in the created directory root
+ - $ npm install
+ - $ node server.js
+ - $ npm start
 
   Browser should open. If you would like to try out the chat open the page in an other tab as well.
 
@@ -13,7 +13,7 @@
   to serve one minified JS and CSS file
   npm build => public/static
 
-What it is and how to use?
+<b>What it is and how to use?</b>
 
 Please Note:  I assume in the following description you've already opened the application in two
 different browser tab at the same time.

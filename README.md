@@ -11,10 +11,11 @@
 
   Browser should open. If you would like to try out the chat open the page in an other tab as well.
 
-<b>2. Build for prod</b>
+<b>2. Build and testing </b>
   Serving only one minified JS and CSS file
-  npm build => public/static
-
+  $ npm build (output => public/static)
+  $ npm test (By lack of time avaliable unit tests only for ChatSettings component.)
+  
 <b>What it is and how to use?</b>
 
 Please Note:  I assume in the following description you've already opened the application in two
